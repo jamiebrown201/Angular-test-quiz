@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900|Roboto:400,100);
+
+body { background-color: #fff; padding: 20px; }
+
+#myQuiz {
+   font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;
+   width: 650px; height: 650px;
+   position: relative;
+   overflow: hidden;
+   color: #fff;
+   background: #000 url(../images/background.jpg) no-repeat 0px 0px;
+}
+
+#myQuiz h2 {
+  font-size: 3em; margin: 0px; font-weight: 100;
+}
+
+#myQuiz h3 {
+  font-size: 2.4em; margin: 0px; font-weight: 100;
+}
+
+#myQuiz p {
+  margin: 0px 0px 14px 0px; font-weight: 100;
+}
+
+#myQuiz .btn {
+  display: inline-block; cursor: pointer; background-color: #c04b01;
+  color: #fff; text-decoration: none;
+  padding: 5px 15px; border-radius: 6px;
+}
+
+
+/* intro */
+
+#myQuiz .intro {
+  position: absolute; top: 225px; left: 660px; width: 550px;
+}
+
+#myQuiz .intro p {
+  margin: 0px 0px 40px 0px;
+}
+
+
+/* Questions */
+#myQuiz .question {
+  width: 550px; position: absolute; top: 225px; left: 40px
+}
+
+#myQuiz .question .txt {
+  font-size: 1.6em; margin: 0px 0px 20px 0px;
+}
+
+#myQuiz .question .ans {
+  display: inline-block;
+  font-size: 1.1em;
+  width: 225px;
+  border: 2px solid rgba(238,189,102,.4);
+  border-radius: 6px; padding: 10px; margin: 0px 15px 15px 0px; position: relative;
+}
+
+#myQuiz .question .ans.selected 
