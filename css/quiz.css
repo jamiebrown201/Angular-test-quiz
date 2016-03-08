@@ -40,10 +40,9 @@ body { background-color: #fff; padding: 20px; }
   margin: 0px 0px 40px 0px;
 }
 
-
 /* Questions */
 #myQuiz .question {
-  width: 550px; position: absolute; top: 225px; left: 40px
+  width: 550px; position: absolute; top: 225px; left: 660px
 }
 
 #myQuiz .question .txt {
@@ -94,6 +93,20 @@ body { background-color: #fff; padding: 20px; }
 }
 
 /* feedback */
-#myQuiz .feedback { color: #efbe5e; margin-top: 10px; transition: opacity 1.5s, margin-top 1.5s;}
+
+#myQuiz .feedback {
+  color: #efbe5e;
+  margin-top: 50px;
+  transition: opacity 1.5s, margin-top 1.5s;
+  opacity: 0;
+}
+
 #myQuiz .feedback .btn { margin-top: 5px; }
+
 #myQuiz .feedback strong { color: #fff; }
+
+#myQuiz .answered .feedback { visibility: visable; opacity: 1; margin-top: 10px; }
+
+/* Results */
+
+#myQuiz .results { position: absolute; top: 225px; left: 40px; width: 550px; }
