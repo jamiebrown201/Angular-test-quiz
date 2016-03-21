@@ -47,6 +47,36 @@
 			return $scope.activeQuestion += 1;
 		};
 
+		$scope.createShareLinks = function(percentage){
+
+			// var url = 'http://google.com';
+
+			var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my saturn quiz score!&body=I scored a '+ percentage +'% on this quiz about Saturn. Try to beat my score at '+ url +'">Email a friend</a>';
+
+      var twitterlLink = '<a class="btn twitter" target="_blank" href="http://twitter.com/share?text=I scored a '+ percentage +'% on this quiz about Saturn. Try to beat my score at&url='+url+'&hashtags=SaturnQuiz">Tweet your score</a>';
+
+      var newMarkup = emailLink + twitterlLink;
+
+      return $sce.trustAsHtml(newMarkup);
+
+		};
+
 	}]);
 
 })();
+
+
+
+var num = 0;
+while(num < 101){
+	if(num % 3 === 0 && num % 5 === 0){
+  	console.log('fizzbuzz');
+  }else if(num % 3 === 0){
+  	console.log('fizz');
+  }else if(num % 5 === 0){
+  	console.log('buzz');
+  } else{
+  	console.log(num);
+  }
+	num++;
+}

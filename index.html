@@ -46,9 +46,7 @@
         <h3>Results</h3>
         <p>You scored {{percentage}}% by correctly answeing {{score}} of the total {{totalQuestions}} questions.</p>
         <p>Use the links below to challenge your freinds.</p>
-        <div class="share">
-          <a class="btn email" hrf="#">Email</a>
-          <a class="btn twitter" hrf="#">Tweet</a>
+        <div class="share" ng-bind-html="createShareLinks(percentage)">
         </div>
       </div>
     </div>
